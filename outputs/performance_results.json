@@ -1,0 +1,26 @@
+﻿{
+  "environment": "Google Colab",
+  "spark_version": "4.0.1",
+  "spark_master": "local[2]",
+  "raw_order_rows": 250000,
+  "completed_order_rows": 210377,
+  "shuffle_partitions": "8",
+  "calculation": "Monthly completed-sales aggregation",
+  "measured_runs_per_condition": 3,
+  "warmup_runs_excluded": true,
+  "uncached_times_seconds": [
+    2.775622757000292,
+    3.991437068000323,
+    3.480519287000334
+  ],
+  "cached_times_seconds": [
+    1.1633438250000836,
+    0.9801905979998082,
+    1.0153301049999754
+  ],
+  "uncached_median_seconds": 3.480519287000334,
+  "cached_median_seconds": 1.0153301049999754,
+  "cache_setup_seconds": 5.301934863000042,
+  "results_match": true,
+  "limitation": "Single Colab local-mode experiment. Timings may vary; cache setup is measured separately."
+}

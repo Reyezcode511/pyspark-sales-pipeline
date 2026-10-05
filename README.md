@@ -1,27 +1,98 @@
-# Sales Data Engineering Challenge — 250,000 order records
+# PySpark Sales Data Engineering Pipeline
 
-A fictional Canadian online retailer needs reliable sales reports. Your role is to build a repeatable PySpark pipeline from messy CSV files to validated Parquet datasets and business summaries.
+Processes 250,000 simulated sales records into validated
+Parquet datasets and sales reports.
 
-All data is simulated. Amounts are in Canadian dollars; prices are stored as integer cents to avoid floating-point rounding. Each row represents one order with one product, not a multi-item order line.
+## Business problem
 
-## Start in Google Colab
-1. Extract this ZIP on your computer and upload `notebooks/sales_starter.ipynb` to Colab using File > Upload notebook.
-2. Run its setup cell. Its upload cell asks you to upload the original project ZIP.
-3. Run the loading cells and then work through the task cells in order.
-4. Read `docs/TASKS.md` for exact cleaning rules and acceptance criteria.
-5. Compare your results with `checks/expected_results.json` only after making an attempt.
+A fictional retailer needs reliable monthly, regional,
+and product sales reports from messy order files.
 
-You do not need Anaconda, Docker, or a cloud cluster. Uploaded files and outputs disappear when Colab's runtime resets; download your notebook and output ZIP before leaving.
+## Pipeline
 
-## Included data
-- Five order CSVs, each containing 50,000 rows: 250,000 raw order rows total.
-- 10,000 unique customers.
-- 500 unique products.
-- Dates cover 2025. The generator is deterministic (seed 511).
-- Exact duplicates, missing customer IDs, unknown product IDs, invalid quantities, negative prices, invalid dates, and missing statuses are deliberately included.
+CSV inputs → Deduplication → Validation → Customer/product joins
+→ Sales summaries → Parquet outputs → Verification
 
-## Evidence and limits
-The expected counts and totals were independently calculated with Python's standard library and checked against the generated CSV files. The starter notebook has not been executed in Spark here. Its TODO cells are intentionally unfinished. There are no invented Spark timings or screenshots. This is a single-machine learning workload, not proof of production cluster performance.
+## Data
 
-## GitHub deliverables
-Finish your notebook; save its actual outputs; include your cleaning decisions, architecture diagram, checks, and measured performance. Credit the supplied simulated dataset and starter scaffold; describe the transformations and tests you implemented yourself. Keep reference answers out of your headline results until your own pipeline matches them.
+- 250,000 raw order rows across five CSV files
+- 10,000 customers
+- 500 products
+- All data is simulated
+- Monetary values are stored as integer Canadian cents
+
+## Cleaning rules
+
+Remove exact duplicates. Reject orders with invalid customer
+or product IDs, non-positive quantities, negative prices,
+invalid dates, unsupported statuses, or non-CAD currency.
+
+Rejected records are retained with a reason for review.
+
+## Expected results
+
+The project reference checks specify:
+- 1,000 exact duplicates removed
+- 1,494 invalid orders rejected
+- 247,506 valid orders
+- 210,377 completed orders
+- CAD 159,557,550.49 in completed-sales revenue
+
+The notebook contains assertions to compare actual results
+against these values and verify that report totals agree.
+
+Cancelled and refunded orders are excluded from sales reports.
+This is completed-sales revenue, not net revenue or profit.
+
+## Outputs
+
+- Clean enriched orders, partitioned by month
+- Rejected orders with rejection reasons
+- Monthly sales summary
+- Regional sales summary
+- Product sales summary
+- Performance measurements in JSON
+
+Datasets and summaries are saved as Parquet.
+
+## Performance experiment
+
+The same monthly aggregation was measured in Colab local mode.
+One warm-up run per condition was excluded, followed by three
+measured runs per condition.
+
+- Uncached median: 3.481 seconds
+- Cached median: 1.015 seconds
+- Cache population: 5.302 seconds
+- Aggregation results matched
+
+Cached execution had approximately 70.8% lower median runtime
+in this experiment. Cache setup adds an initial cost.
+These timings do not demonstrate multi-machine cluster scaling.
+
+## How to run
+
+1. Open the executed project notebook in Google Colab.
+2. Run the PySpark installation cell.
+3. Upload Sales_Data_Engineering_250000.zip when prompted.
+4. Run the remaining cells in order.
+5. Download the output archive and executed notebook.
+
+## Verification
+
+The notebook checks:
+- Unique customer and product keys
+- Unique order IDs after deduplication
+- Row conservation during validation
+- Unchanged row counts after joins
+- Consistent revenue and order counts across reports
+- Counts and totals after reading saved Parquet files
+- Matching cached and uncached aggregation results
+
+## Credits and limitations
+
+The simulated dataset, starter scaffold, and guided code were
+provided with ChatGPT assistance. I ran the pipeline in Colab.
+
+This is an educational batch pipeline. It does not yet include
+production scheduling, monitoring alerts, or cloud deployment.
