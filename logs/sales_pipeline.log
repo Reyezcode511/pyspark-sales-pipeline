@@ -1,0 +1,19 @@
+﻿2026-10-05 21:19:59,994 | INFO | Pipeline logging ready
+2026-10-05 21:20:09,538 | INFO | Loading orders
+2026-10-05 21:20:12,016 | INFO | Orders loaded successfully: 250000 rows
+2026-10-05 21:20:46,459 | INFO | Removing duplicate orders
+2026-10-05 21:20:51,458 | INFO | Deduplication completed: 1000 duplicates removed; 249000 rows remaining
+2026-10-05 21:21:27,512 | INFO | Checking valid and rejected orders
+2026-10-05 21:21:37,264 | INFO | Validation passed: 247506 valid orders; 1494 rejected orders
+2026-10-05 21:22:24,077 | INFO | Starting monthly sales aggregation
+2026-10-05 21:22:31,862 | INFO | Monthly sales aggregation completed
+2026-10-05 21:23:04,630 | INFO | Saving datasets and sales summaries
+2026-10-05 21:23:15,354 | INFO | Clean orders saved
+2026-10-05 21:23:19,210 | INFO | Rejected orders saved
+2026-10-05 21:23:23,285 | INFO | monthly_summary saved successfully
+2026-10-05 21:23:27,929 | INFO | region_summary saved successfully
+2026-10-05 21:23:32,036 | INFO | product_summary saved successfully
+2026-10-05 21:23:32,045 | INFO | All datasets and summaries saved
+2026-10-05 21:24:16,334 | INFO | Verifying saved outputs
+2026-10-05 21:24:20,237 | INFO | Saved row counts and all report totals verified
+2026-10-05 21:24:20,240 | INFO | Sales data pipeline finished successfully
