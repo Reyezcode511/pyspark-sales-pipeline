@@ -1,0 +1,11 @@
+﻿# Open your project folder
+Set-Location "C:\Users\acer\Downloads\pyspark-sales-github"
+
+# Create the logs folder
+New-Item -ItemType Directory -Path ".\logs" -Force | Out-Null
+
+# Save your copied log text
+Get-Clipboard -Raw | Set-Content -Path ".\logs\sales_pipeline.log" -Encoding UTF8
+
+# Display the saved log
+Get-Content ".\logs\sales_pipeline.log"
