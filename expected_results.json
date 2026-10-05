@@ -1,0 +1,2103 @@
+{
+  "verification_method": "Python standard library; Spark starter not executed",
+  "raw_order_rows": 250000,
+  "exact_duplicates_removed": 1000,
+  "deduplicated_rows": 249000,
+  "rejected_rows": 1494,
+  "rejection_counts": {
+    "invalid_customer": 249,
+    "invalid_date": 249,
+    "invalid_quantity": 249,
+    "invalid_status": 249,
+    "invalid_product": 249,
+    "invalid_price": 249
+  },
+  "valid_rows": 247506,
+  "valid_status_counts": {
+    "completed": 210377,
+    "cancelled": 24817,
+    "refunded": 12312
+  },
+  "completed_sales_revenue_cents": 15955755049,
+  "summaries": {
+    "month": {
+      "2025-01": {
+        "revenue_cents": 1367416562,
+        "order_count": 17948
+      },
+      "2025-02": {
+        "revenue_cents": 1231899944,
+        "order_count": 16141
+      },
+      "2025-03": {
+        "revenue_cents": 1347070513,
+        "order_count": 17901
+      },
+      "2025-04": {
+        "revenue_cents": 1309972409,
+        "order_count": 17234
+      },
+      "2025-05": {
+        "revenue_cents": 1335494910,
+        "order_count": 17677
+      },
+      "2025-06": {
+        "revenue_cents": 1312410254,
+        "order_count": 17160
+      },
+      "2025-07": {
+        "revenue_cents": 1359078697,
+        "order_count": 17806
+      },
+      "2025-08": {
+        "revenue_cents": 1354362185,
+        "order_count": 18059
+      },
+      "2025-09": {
+        "revenue_cents": 1302107111,
+        "order_count": 17183
+      },
+      "2025-10": {
+        "revenue_cents": 1365367905,
+        "order_count": 17951
+      },
+      "2025-11": {
+        "revenue_cents": 1307283134,
+        "order_count": 17293
+      },
+      "2025-12": {
+        "revenue_cents": 1363291425,
+        "order_count": 18024
+      }
+    },
+    "region": {
+      "East": {
+        "revenue_cents": 3999576306,
+        "order_count": 52759
+      },
+      "North": {
+        "revenue_cents": 3957355472,
+        "order_count": 52386
+      },
+      "South": {
+        "revenue_cents": 3992654118,
+        "order_count": 52435
+      },
+      "West": {
+        "revenue_cents": 4006169153,
+        "order_count": 52797
+      }
+    },
+    "product": {
+      "P0001": {
+        "revenue_cents": 31608401,
+        "order_count": 421
+      },
+      "P0002": {
+        "revenue_cents": 31378630,
+        "order_count": 437
+      },
+      "P0003": {
+        "revenue_cents": 32406392,
+        "order_count": 417
+      },
+      "P0004": {
+        "revenue_cents": 31341615,
+        "order_count": 428
+      },
+      "P0005": {
+        "revenue_cents": 31107219,
+        "order_count": 408
+      },
+      "P0006": {
+        "revenue_cents": 33615294,
+        "order_count": 421
+      },
+      "P0007": {
+        "revenue_cents": 32776000,
+        "order_count": 435
+      },
+      "P0008": {
+        "revenue_cents": 35544216,
+        "order_count": 456
+      },
+      "P0009": {
+        "revenue_cents": 34077181,
+        "order_count": 447
+      },
+      "P0010": {
+        "revenue_cents": 34589896,
+        "order_count": 457
+      },
+      "P0011": {
+        "revenue_cents": 30595563,
+        "order_count": 423
+      },
+      "P0012": {
+        "revenue_cents": 30670381,
+        "order_count": 413
+      },
+      "P0013": {
+        "revenue_cents": 31059199,
+        "order_count": 411
+      },
+      "P0014": {
+        "revenue_cents": 30443167,
+        "order_count": 414
+      },
+      "P0015": {
+        "revenue_cents": 32672289,
+        "order_count": 423
+      },
+      "P0016": {
+        "revenue_cents": 32368954,
+        "order_count": 439
+      },
+      "P0017": {
+        "revenue_cents": 31893433,
+        "order_count": 437
+      },
+      "P0018": {
+        "revenue_cents": 30949928,
+        "order_count": 414
+      },
+      "P0019": {
+        "revenue_cents": 29702873,
+        "order_count": 399
+      },
+      "P0020": {
+        "revenue_cents": 34206262,
+        "order_count": 433
+      },
+      "P0021": {
+        "revenue_cents": 32527208,
+        "order_count": 434
+      },
+      "P0022": {
+        "revenue_cents": 34562677,
+        "order_count": 445
+      },
+      "P0023": {
+        "revenue_cents": 32273578,
+        "order_count": 421
+      },
+      "P0024": {
+        "revenue_cents": 33242585,
+        "order_count": 438
+      },
+      "P0025": {
+        "revenue_cents": 32212176,
+        "order_count": 412
+      },
+      "P0026": {
+        "revenue_cents": 29949972,
+        "order_count": 376
+      },
+      "P0027": {
+        "revenue_cents": 32329217,
+        "order_count": 414
+      },
+      "P0028": {
+        "revenue_cents": 29296668,
+        "order_count": 384
+      },
+      "P0029": {
+        "revenue_cents": 33474944,
+        "order_count": 424
+      },
+      "P0030": {
+        "revenue_cents": 29414750,
+        "order_count": 405
+      },
+      "P0031": {
+        "revenue_cents": 29615602,
+        "order_count": 407
+      },
+      "P0032": {
+        "revenue_cents": 35084741,
+        "order_count": 439
+      },
+      "P0033": {
+        "revenue_cents": 29133411,
+        "order_count": 394
+      },
+      "P0034": {
+        "revenue_cents": 31008661,
+        "order_count": 401
+      },
+      "P0035": {
+        "revenue_cents": 32469015,
+        "order_count": 444
+      },
+      "P0036": {
+        "revenue_cents": 31771339,
+        "order_count": 420
+      },
+      "P0037": {
+        "revenue_cents": 29930328,
+        "order_count": 405
+      },
+      "P0038": {
+        "revenue_cents": 33662961,
+        "order_count": 423
+      },
+      "P0039": {
+        "revenue_cents": 32934107,
+        "order_count": 443
+      },
+      "P0040": {
+        "revenue_cents": 30801509,
+        "order_count": 401
+      },
+      "P0041": {
+        "revenue_cents": 35568952,
+        "order_count": 445
+      },
+      "P0042": {
+        "revenue_cents": 31170054,
+        "order_count": 421
+      },
+      "P0043": {
+        "revenue_cents": 31174225,
+        "order_count": 422
+      },
+      "P0044": {
+        "revenue_cents": 31345863,
+        "order_count": 423
+      },
+      "P0045": {
+        "revenue_cents": 29258095,
+        "order_count": 408
+      },
+      "P0046": {
+        "revenue_cents": 30439928,
+        "order_count": 411
+      },
+      "P0047": {
+        "revenue_cents": 30318113,
+        "order_count": 402
+      },
+      "P0048": {
+        "revenue_cents": 38236677,
+        "order_count": 464
+      },
+      "P0049": {
+        "revenue_cents": 33606751,
+        "order_count": 432
+      },
+      "P0050": {
+        "revenue_cents": 27751059,
+        "order_count": 359
+      },
+      "P0051": {
+        "revenue_cents": 31701977,
+        "order_count": 430
+      },
+      "P0052": {
+        "revenue_cents": 30362124,
+        "order_count": 412
+      },
+      "P0053": {
+        "revenue_cents": 31917980,
+        "order_count": 421
+      },
+      "P0054": {
+        "revenue_cents": 32711374,
+        "order_count": 433
+      },
+      "P0055": {
+        "revenue_cents": 33118766,
+        "order_count": 436
+      },
+      "P0056": {
+        "revenue_cents": 27703368,
+        "order_count": 382
+      },
+      "P0057": {
+        "revenue_cents": 29422670,
+        "order_count": 386
+      },
+      "P0058": {
+        "revenue_cents": 33404196,
+        "order_count": 461
+      },
+      "P0059": {
+        "revenue_cents": 34202968,
+        "order_count": 456
+      },
+      "P0060": {
+        "revenue_cents": 30593155,
+        "order_count": 400
+      },
+      "P0061": {
+        "revenue_cents": 29096742,
+        "order_count": 401
+      },
+      "P0062": {
+        "revenue_cents": 33477845,
+        "order_count": 436
+      },
+      "P0063": {
+        "revenue_cents": 32887483,
+        "order_count": 424
+      },
+      "P0064": {
+        "revenue_cents": 30397755,
+        "order_count": 415
+      },
+      "P0065": {
+        "revenue_cents": 28866221,
+        "order_count": 393
+      },
+      "P0066": {
+        "revenue_cents": 33483371,
+        "order_count": 449
+      },
+      "P0067": {
+        "revenue_cents": 33472667,
+        "order_count": 428
+      },
+      "P0068": {
+        "revenue_cents": 32013745,
+        "order_count": 434
+      },
+      "P0069": {
+        "revenue_cents": 32264633,
+        "order_count": 405
+      },
+      "P0070": {
+        "revenue_cents": 34125332,
+        "order_count": 435
+      },
+      "P0071": {
+        "revenue_cents": 30871453,
+        "order_count": 419
+      },
+      "P0072": {
+        "revenue_cents": 29644913,
+        "order_count": 411
+      },
+      "P0073": {
+        "revenue_cents": 32466896,
+        "order_count": 432
+      },
+      "P0074": {
+        "revenue_cents": 33026123,
+        "order_count": 427
+      },
+      "P0075": {
+        "revenue_cents": 31262408,
+        "order_count": 415
+      },
+      "P0076": {
+        "revenue_cents": 32490521,
+        "order_count": 425
+      },
+      "P0077": {
+        "revenue_cents": 32407213,
+        "order_count": 421
+      },
+      "P0078": {
+        "revenue_cents": 32933915,
+        "order_count": 448
+      },
+      "P0079": {
+        "revenue_cents": 31955382,
+        "order_count": 415
+      },
+      "P0080": {
+        "revenue_cents": 30941884,
+        "order_count": 423
+      },
+      "P0081": {
+        "revenue_cents": 34468193,
+        "order_count": 450
+      },
+      "P0082": {
+        "revenue_cents": 34719115,
+        "order_count": 428
+      },
+      "P0083": {
+        "revenue_cents": 34273178,
+        "order_count": 469
+      },
+      "P0084": {
+        "revenue_cents": 33455156,
+        "order_count": 436
+      },
+      "P0085": {
+        "revenue_cents": 31872435,
+        "order_count": 446
+      },
+      "P0086": {
+        "revenue_cents": 31770391,
+        "order_count": 434
+      },
+      "P0087": {
+        "revenue_cents": 33595949,
+        "order_count": 412
+      },
+      "P0088": {
+        "revenue_cents": 33133941,
+        "order_count": 419
+      },
+      "P0089": {
+        "revenue_cents": 32049138,
+        "order_count": 397
+      },
+      "P0090": {
+        "revenue_cents": 32452864,
+        "order_count": 412
+      },
+      "P0091": {
+        "revenue_cents": 32795516,
+        "order_count": 431
+      },
+      "P0092": {
+        "revenue_cents": 32315522,
+        "order_count": 424
+      },
+      "P0093": {
+        "revenue_cents": 36077860,
+        "order_count": 464
+      },
+      "P0094": {
+        "revenue_cents": 30437163,
+        "order_count": 404
+      },
+      "P0095": {
+        "revenue_cents": 33522100,
+        "order_count": 459
+      },
+      "P0096": {
+        "revenue_cents": 29692940,
+        "order_count": 404
+      },
+      "P0097": {
+        "revenue_cents": 34848512,
+        "order_count": 443
+      },
+      "P0098": {
+        "revenue_cents": 32583037,
+        "order_count": 464
+      },
+      "P0099": {
+        "revenue_cents": 33133577,
+        "order_count": 436
+      },
+      "P0100": {
+        "revenue_cents": 33962480,
+        "order_count": 432
+      },
+      "P0101": {
+        "revenue_cents": 32244204,
+        "order_count": 420
+      },
+      "P0102": {
+        "revenue_cents": 34710757,
+        "order_count": 436
+      },
+      "P0103": {
+        "revenue_cents": 29115946,
+        "order_count": 396
+      },
+      "P0104": {
+        "revenue_cents": 30002120,
+        "order_count": 421
+      },
+      "P0105": {
+        "revenue_cents": 30569679,
+        "order_count": 415
+      },
+      "P0106": {
+        "revenue_cents": 33154947,
+        "order_count": 408
+      },
+      "P0107": {
+        "revenue_cents": 31101894,
+        "order_count": 393
+      },
+      "P0108": {
+        "revenue_cents": 33343796,
+        "order_count": 442
+      },
+      "P0109": {
+        "revenue_cents": 34191611,
+        "order_count": 443
+      },
+      "P0110": {
+        "revenue_cents": 28175008,
+        "order_count": 375
+      },
+      "P0111": {
+        "revenue_cents": 34958120,
+        "order_count": 428
+      },
+      "P0112": {
+        "revenue_cents": 32576814,
+        "order_count": 427
+      },
+      "P0113": {
+        "revenue_cents": 31242989,
+        "order_count": 420
+      },
+      "P0114": {
+        "revenue_cents": 33609403,
+        "order_count": 421
+      },
+      "P0115": {
+        "revenue_cents": 32299994,
+        "order_count": 414
+      },
+      "P0116": {
+        "revenue_cents": 35206192,
+        "order_count": 440
+      },
+      "P0117": {
+        "revenue_cents": 31716998,
+        "order_count": 406
+      },
+      "P0118": {
+        "revenue_cents": 29994212,
+        "order_count": 388
+      },
+      "P0119": {
+        "revenue_cents": 33251748,
+        "order_count": 460
+      },
+      "P0120": {
+        "revenue_cents": 29348275,
+        "order_count": 396
+      },
+      "P0121": {
+        "revenue_cents": 28862636,
+        "order_count": 422
+      },
+      "P0122": {
+        "revenue_cents": 29090263,
+        "order_count": 409
+      },
+      "P0123": {
+        "revenue_cents": 30023717,
+        "order_count": 399
+      },
+      "P0124": {
+        "revenue_cents": 33620297,
+        "order_count": 446
+      },
+      "P0125": {
+        "revenue_cents": 34814593,
+        "order_count": 469
+      },
+      "P0126": {
+        "revenue_cents": 29518758,
+        "order_count": 400
+      },
+      "P0127": {
+        "revenue_cents": 34146225,
+        "order_count": 456
+      },
+      "P0128": {
+        "revenue_cents": 31445844,
+        "order_count": 412
+      },
+      "P0129": {
+        "revenue_cents": 32267757,
+        "order_count": 407
+      },
+      "P0130": {
+        "revenue_cents": 34161099,
+        "order_count": 416
+      },
+      "P0131": {
+        "revenue_cents": 32787913,
+        "order_count": 410
+      },
+      "P0132": {
+        "revenue_cents": 34628118,
+        "order_count": 462
+      },
+      "P0133": {
+        "revenue_cents": 30706953,
+        "order_count": 385
+      },
+      "P0134": {
+        "revenue_cents": 34484822,
+        "order_count": 466
+      },
+      "P0135": {
+        "revenue_cents": 31616575,
+        "order_count": 413
+      },
+      "P0136": {
+        "revenue_cents": 28943849,
+        "order_count": 384
+      },
+      "P0137": {
+        "revenue_cents": 31787252,
+        "order_count": 426
+      },
+      "P0138": {
+        "revenue_cents": 35538649,
+        "order_count": 434
+      },
+      "P0139": {
+        "revenue_cents": 30289100,
+        "order_count": 386
+      },
+      "P0140": {
+        "revenue_cents": 30443272,
+        "order_count": 415
+      },
+      "P0141": {
+        "revenue_cents": 33219061,
+        "order_count": 420
+      },
+      "P0142": {
+        "revenue_cents": 33062163,
+        "order_count": 413
+      },
+      "P0143": {
+        "revenue_cents": 32258299,
+        "order_count": 424
+      },
+      "P0144": {
+        "revenue_cents": 34058082,
+        "order_count": 424
+      },
+      "P0145": {
+        "revenue_cents": 32141045,
+        "order_count": 428
+      },
+      "P0146": {
+        "revenue_cents": 33496357,
+        "order_count": 433
+      },
+      "P0147": {
+        "revenue_cents": 29769014,
+        "order_count": 406
+      },
+      "P0148": {
+        "revenue_cents": 29275454,
+        "order_count": 399
+      },
+      "P0149": {
+        "revenue_cents": 31941848,
+        "order_count": 432
+      },
+      "P0150": {
+        "revenue_cents": 32164235,
+        "order_count": 435
+      },
+      "P0151": {
+        "revenue_cents": 31191088,
+        "order_count": 413
+      },
+      "P0152": {
+        "revenue_cents": 29591271,
+        "order_count": 399
+      },
+      "P0153": {
+        "revenue_cents": 32974898,
+        "order_count": 431
+      },
+      "P0154": {
+        "revenue_cents": 30050714,
+        "order_count": 396
+      },
+      "P0155": {
+        "revenue_cents": 34410190,
+        "order_count": 458
+      },
+      "P0156": {
+        "revenue_cents": 31373994,
+        "order_count": 394
+      },
+      "P0157": {
+        "revenue_cents": 33370881,
+        "order_count": 425
+      },
+      "P0158": {
+        "revenue_cents": 31417581,
+        "order_count": 418
+      },
+      "P0159": {
+        "revenue_cents": 26363812,
+        "order_count": 360
+      },
+      "P0160": {
+        "revenue_cents": 33288451,
+        "order_count": 439
+      },
+      "P0161": {
+        "revenue_cents": 29029744,
+        "order_count": 405
+      },
+      "P0162": {
+        "revenue_cents": 32236902,
+        "order_count": 433
+      },
+      "P0163": {
+        "revenue_cents": 32377812,
+        "order_count": 420
+      },
+      "P0164": {
+        "revenue_cents": 33549389,
+        "order_count": 446
+      },
+      "P0165": {
+        "revenue_cents": 30191759,
+        "order_count": 415
+      },
+      "P0166": {
+        "revenue_cents": 31981655,
+        "order_count": 424
+      },
+      "P0167": {
+        "revenue_cents": 32176399,
+        "order_count": 425
+      },
+      "P0168": {
+        "revenue_cents": 33523649,
+        "order_count": 419
+      },
+      "P0169": {
+        "revenue_cents": 31306907,
+        "order_count": 405
+      },
+      "P0170": {
+        "revenue_cents": 28855990,
+        "order_count": 394
+      },
+      "P0171": {
+        "revenue_cents": 27330040,
+        "order_count": 377
+      },
+      "P0172": {
+        "revenue_cents": 34028958,
+        "order_count": 449
+      },
+      "P0173": {
+        "revenue_cents": 31109341,
+        "order_count": 415
+      },
+      "P0174": {
+        "revenue_cents": 33925496,
+        "order_count": 443
+      },
+      "P0175": {
+        "revenue_cents": 30018485,
+        "order_count": 396
+      },
+      "P0176": {
+        "revenue_cents": 31618116,
+        "order_count": 420
+      },
+      "P0177": {
+        "revenue_cents": 34220955,
+        "order_count": 459
+      },
+      "P0178": {
+        "revenue_cents": 28763852,
+        "order_count": 389
+      },
+      "P0179": {
+        "revenue_cents": 34029343,
+        "order_count": 448
+      },
+      "P0180": {
+        "revenue_cents": 31338456,
+        "order_count": 415
+      },
+      "P0181": {
+        "revenue_cents": 34067854,
+        "order_count": 427
+      },
+      "P0182": {
+        "revenue_cents": 32370930,
+        "order_count": 423
+      },
+      "P0183": {
+        "revenue_cents": 35917406,
+        "order_count": 441
+      },
+      "P0184": {
+        "revenue_cents": 31398063,
+        "order_count": 397
+      },
+      "P0185": {
+        "revenue_cents": 33138488,
+        "order_count": 426
+      },
+      "P0186": {
+        "revenue_cents": 32985078,
+        "order_count": 415
+      },
+      "P0187": {
+        "revenue_cents": 32482292,
+        "order_count": 415
+      },
+      "P0188": {
+        "revenue_cents": 31985281,
+        "order_count": 435
+      },
+      "P0189": {
+        "revenue_cents": 33776603,
+        "order_count": 424
+      },
+      "P0190": {
+        "revenue_cents": 34631552,
+        "order_count": 432
+      },
+      "P0191": {
+        "revenue_cents": 30032059,
+        "order_count": 406
+      },
+      "P0192": {
+        "revenue_cents": 32867126,
+        "order_count": 407
+      },
+      "P0193": {
+        "revenue_cents": 30395025,
+        "order_count": 408
+      },
+      "P0194": {
+        "revenue_cents": 28382383,
+        "order_count": 376
+      },
+      "P0195": {
+        "revenue_cents": 32383250,
+        "order_count": 416
+      },
+      "P0196": {
+        "revenue_cents": 29923671,
+        "order_count": 420
+      },
+      "P0197": {
+        "revenue_cents": 36519301,
+        "order_count": 454
+      },
+      "P0198": {
+        "revenue_cents": 35701941,
+        "order_count": 442
+      },
+      "P0199": {
+        "revenue_cents": 34652192,
+        "order_count": 442
+      },
+      "P0200": {
+        "revenue_cents": 32796010,
+        "order_count": 438
+      },
+      "P0201": {
+        "revenue_cents": 33544917,
+        "order_count": 437
+      },
+      "P0202": {
+        "revenue_cents": 31484004,
+        "order_count": 435
+      },
+      "P0203": {
+        "revenue_cents": 33685499,
+        "order_count": 441
+      },
+      "P0204": {
+        "revenue_cents": 30417118,
+        "order_count": 379
+      },
+      "P0205": {
+        "revenue_cents": 34576582,
+        "order_count": 427
+      },
+      "P0206": {
+        "revenue_cents": 30685477,
+        "order_count": 418
+      },
+      "P0207": {
+        "revenue_cents": 28015852,
+        "order_count": 385
+      },
+      "P0208": {
+        "revenue_cents": 34145921,
+        "order_count": 451
+      },
+      "P0209": {
+        "revenue_cents": 30600774,
+        "order_count": 422
+      },
+      "P0210": {
+        "revenue_cents": 29258331,
+        "order_count": 396
+      },
+      "P0211": {
+        "revenue_cents": 32474431,
+        "order_count": 417
+      },
+      "P0212": {
+        "revenue_cents": 31145063,
+        "order_count": 423
+      },
+      "P0213": {
+        "revenue_cents": 33417263,
+        "order_count": 440
+      },
+      "P0214": {
+        "revenue_cents": 33593287,
+        "order_count": 440
+      },
+      "P0215": {
+        "revenue_cents": 31837335,
+        "order_count": 410
+      },
+      "P0216": {
+        "revenue_cents": 31866444,
+        "order_count": 402
+      },
+      "P0217": {
+        "revenue_cents": 31107040,
+        "order_count": 422
+      },
+      "P0218": {
+        "revenue_cents": 33172505,
+        "order_count": 434
+      },
+      "P0219": {
+        "revenue_cents": 34513817,
+        "order_count": 453
+      },
+      "P0220": {
+        "revenue_cents": 36660381,
+        "order_count": 468
+      },
+      "P0221": {
+        "revenue_cents": 30976238,
+        "order_count": 410
+      },
+      "P0222": {
+        "revenue_cents": 33927012,
+        "order_count": 448
+      },
+      "P0223": {
+        "revenue_cents": 32006760,
+        "order_count": 420
+      },
+      "P0224": {
+        "revenue_cents": 31806784,
+        "order_count": 424
+      },
+      "P0225": {
+        "revenue_cents": 33142064,
+        "order_count": 417
+      },
+      "P0226": {
+        "revenue_cents": 32437551,
+        "order_count": 414
+      },
+      "P0227": {
+        "revenue_cents": 33226371,
+        "order_count": 428
+      },
+      "P0228": {
+        "revenue_cents": 30309297,
+        "order_count": 402
+      },
+      "P0229": {
+        "revenue_cents": 32170988,
+        "order_count": 415
+      },
+      "P0230": {
+        "revenue_cents": 30711553,
+        "order_count": 399
+      },
+      "P0231": {
+        "revenue_cents": 30663552,
+        "order_count": 403
+      },
+      "P0232": {
+        "revenue_cents": 31531775,
+        "order_count": 398
+      },
+      "P0233": {
+        "revenue_cents": 31992331,
+        "order_count": 426
+      },
+      "P0234": {
+        "revenue_cents": 33172577,
+        "order_count": 450
+      },
+      "P0235": {
+        "revenue_cents": 33274877,
+        "order_count": 444
+      },
+      "P0236": {
+        "revenue_cents": 32538061,
+        "order_count": 430
+      },
+      "P0237": {
+        "revenue_cents": 33037572,
+        "order_count": 441
+      },
+      "P0238": {
+        "revenue_cents": 31250593,
+        "order_count": 410
+      },
+      "P0239": {
+        "revenue_cents": 28194454,
+        "order_count": 402
+      },
+      "P0240": {
+        "revenue_cents": 31559055,
+        "order_count": 430
+      },
+      "P0241": {
+        "revenue_cents": 29823729,
+        "order_count": 421
+      },
+      "P0242": {
+        "revenue_cents": 32762988,
+        "order_count": 436
+      },
+      "P0243": {
+        "revenue_cents": 32358147,
+        "order_count": 456
+      },
+      "P0244": {
+        "revenue_cents": 29861195,
+        "order_count": 403
+      },
+      "P0245": {
+        "revenue_cents": 31556646,
+        "order_count": 406
+      },
+      "P0246": {
+        "revenue_cents": 33240048,
+        "order_count": 447
+      },
+      "P0247": {
+        "revenue_cents": 30206282,
+        "order_count": 397
+      },
+      "P0248": {
+        "revenue_cents": 33137800,
+        "order_count": 415
+      },
+      "P0249": {
+        "revenue_cents": 33424661,
+        "order_count": 427
+      },
+      "P0250": {
+        "revenue_cents": 31208151,
+        "order_count": 414
+      },
+      "P0251": {
+        "revenue_cents": 31473272,
+        "order_count": 424
+      },
+      "P0252": {
+        "revenue_cents": 31827282,
+        "order_count": 448
+      },
+      "P0253": {
+        "revenue_cents": 30221473,
+        "order_count": 382
+      },
+      "P0254": {
+        "revenue_cents": 31840383,
+        "order_count": 415
+      },
+      "P0255": {
+        "revenue_cents": 32210580,
+        "order_count": 442
+      },
+      "P0256": {
+        "revenue_cents": 32314234,
+        "order_count": 432
+      },
+      "P0257": {
+        "revenue_cents": 31246950,
+        "order_count": 395
+      },
+      "P0258": {
+        "revenue_cents": 32642834,
+        "order_count": 417
+      },
+      "P0259": {
+        "revenue_cents": 33373927,
+        "order_count": 441
+      },
+      "P0260": {
+        "revenue_cents": 32051105,
+        "order_count": 414
+      },
+      "P0261": {
+        "revenue_cents": 29230761,
+        "order_count": 408
+      },
+      "P0262": {
+        "revenue_cents": 29640273,
+        "order_count": 406
+      },
+      "P0263": {
+        "revenue_cents": 31245954,
+        "order_count": 410
+      },
+      "P0264": {
+        "revenue_cents": 32230704,
+        "order_count": 418
+      },
+      "P0265": {
+        "revenue_cents": 32300796,
+        "order_count": 439
+      },
+      "P0266": {
+        "revenue_cents": 36738236,
+        "order_count": 451
+      },
+      "P0267": {
+        "revenue_cents": 29504113,
+        "order_count": 417
+      },
+      "P0268": {
+        "revenue_cents": 33094722,
+        "order_count": 436
+      },
+      "P0269": {
+        "revenue_cents": 28212784,
+        "order_count": 392
+      },
+      "P0270": {
+        "revenue_cents": 33431926,
+        "order_count": 428
+      },
+      "P0271": {
+        "revenue_cents": 32626586,
+        "order_count": 425
+      },
+      "P0272": {
+        "revenue_cents": 33167743,
+        "order_count": 425
+      },
+      "P0273": {
+        "revenue_cents": 28348480,
+        "order_count": 371
+      },
+      "P0274": {
+        "revenue_cents": 29736645,
+        "order_count": 408
+      },
+      "P0275": {
+        "revenue_cents": 30712884,
+        "order_count": 436
+      },
+      "P0276": {
+        "revenue_cents": 34802046,
+        "order_count": 436
+      },
+      "P0277": {
+        "revenue_cents": 27288718,
+        "order_count": 400
+      },
+      "P0278": {
+        "revenue_cents": 30772623,
+        "order_count": 422
+      },
+      "P0279": {
+        "revenue_cents": 32815632,
+        "order_count": 414
+      },
+      "P0280": {
+        "revenue_cents": 34047339,
+        "order_count": 434
+      },
+      "P0281": {
+        "revenue_cents": 32720345,
+        "order_count": 428
+      },
+      "P0282": {
+        "revenue_cents": 32010265,
+        "order_count": 400
+      },
+      "P0283": {
+        "revenue_cents": 32280357,
+        "order_count": 440
+      },
+      "P0284": {
+        "revenue_cents": 29346323,
+        "order_count": 406
+      },
+      "P0285": {
+        "revenue_cents": 28388005,
+        "order_count": 377
+      },
+      "P0286": {
+        "revenue_cents": 35139321,
+        "order_count": 467
+      },
+      "P0287": {
+        "revenue_cents": 32378593,
+        "order_count": 434
+      },
+      "P0288": {
+        "revenue_cents": 30003416,
+        "order_count": 392
+      },
+      "P0289": {
+        "revenue_cents": 31319189,
+        "order_count": 423
+      },
+      "P0290": {
+        "revenue_cents": 30594786,
+        "order_count": 420
+      },
+      "P0291": {
+        "revenue_cents": 32905891,
+        "order_count": 421
+      },
+      "P0292": {
+        "revenue_cents": 34058278,
+        "order_count": 430
+      },
+      "P0293": {
+        "revenue_cents": 31220914,
+        "order_count": 413
+      },
+      "P0294": {
+        "revenue_cents": 34584681,
+        "order_count": 435
+      },
+      "P0295": {
+        "revenue_cents": 29275078,
+        "order_count": 380
+      },
+      "P0296": {
+        "revenue_cents": 32082656,
+        "order_count": 411
+      },
+      "P0297": {
+        "revenue_cents": 34768694,
+        "order_count": 439
+      },
+      "P0298": {
+        "revenue_cents": 33049875,
+        "order_count": 437
+      },
+      "P0299": {
+        "revenue_cents": 32436726,
+        "order_count": 427
+      },
+      "P0300": {
+        "revenue_cents": 33207818,
+        "order_count": 422
+      },
+      "P0301": {
+        "revenue_cents": 28743269,
+        "order_count": 396
+      },
+      "P0302": {
+        "revenue_cents": 33561824,
+        "order_count": 435
+      },
+      "P0303": {
+        "revenue_cents": 31378415,
+        "order_count": 415
+      },
+      "P0304": {
+        "revenue_cents": 30533064,
+        "order_count": 415
+      },
+      "P0305": {
+        "revenue_cents": 30201797,
+        "order_count": 416
+      },
+      "P0306": {
+        "revenue_cents": 35304909,
+        "order_count": 441
+      },
+      "P0307": {
+        "revenue_cents": 31826223,
+        "order_count": 414
+      },
+      "P0308": {
+        "revenue_cents": 30508637,
+        "order_count": 400
+      },
+      "P0309": {
+        "revenue_cents": 32385108,
+        "order_count": 426
+      },
+      "P0310": {
+        "revenue_cents": 26115721,
+        "order_count": 373
+      },
+      "P0311": {
+        "revenue_cents": 30907707,
+        "order_count": 421
+      },
+      "P0312": {
+        "revenue_cents": 30338335,
+        "order_count": 404
+      },
+      "P0313": {
+        "revenue_cents": 30799423,
+        "order_count": 410
+      },
+      "P0314": {
+        "revenue_cents": 29513595,
+        "order_count": 406
+      },
+      "P0315": {
+        "revenue_cents": 28504776,
+        "order_count": 387
+      },
+      "P0316": {
+        "revenue_cents": 29762034,
+        "order_count": 416
+      },
+      "P0317": {
+        "revenue_cents": 32570624,
+        "order_count": 438
+      },
+      "P0318": {
+        "revenue_cents": 33209915,
+        "order_count": 427
+      },
+      "P0319": {
+        "revenue_cents": 30400013,
+        "order_count": 414
+      },
+      "P0320": {
+        "revenue_cents": 32800749,
+        "order_count": 432
+      },
+      "P0321": {
+        "revenue_cents": 35195434,
+        "order_count": 442
+      },
+      "P0322": {
+        "revenue_cents": 33183366,
+        "order_count": 452
+      },
+      "P0323": {
+        "revenue_cents": 32847249,
+        "order_count": 417
+      },
+      "P0324": {
+        "revenue_cents": 29194822,
+        "order_count": 394
+      },
+      "P0325": {
+        "revenue_cents": 33683078,
+        "order_count": 443
+      },
+      "P0326": {
+        "revenue_cents": 35719411,
+        "order_count": 425
+      },
+      "P0327": {
+        "revenue_cents": 32971224,
+        "order_count": 435
+      },
+      "P0328": {
+        "revenue_cents": 30989328,
+        "order_count": 400
+      },
+      "P0329": {
+        "revenue_cents": 33154179,
+        "order_count": 423
+      },
+      "P0330": {
+        "revenue_cents": 29274863,
+        "order_count": 404
+      },
+      "P0331": {
+        "revenue_cents": 32140874,
+        "order_count": 412
+      },
+      "P0332": {
+        "revenue_cents": 29347845,
+        "order_count": 406
+      },
+      "P0333": {
+        "revenue_cents": 34840472,
+        "order_count": 456
+      },
+      "P0334": {
+        "revenue_cents": 32483277,
+        "order_count": 408
+      },
+      "P0335": {
+        "revenue_cents": 34762781,
+        "order_count": 456
+      },
+      "P0336": {
+        "revenue_cents": 28250654,
+        "order_count": 387
+      },
+      "P0337": {
+        "revenue_cents": 28947151,
+        "order_count": 376
+      },
+      "P0338": {
+        "revenue_cents": 32796909,
+        "order_count": 427
+      },
+      "P0339": {
+        "revenue_cents": 32547429,
+        "order_count": 400
+      },
+      "P0340": {
+        "revenue_cents": 29817478,
+        "order_count": 408
+      },
+      "P0341": {
+        "revenue_cents": 31622396,
+        "order_count": 429
+      },
+      "P0342": {
+        "revenue_cents": 32774256,
+        "order_count": 427
+      },
+      "P0343": {
+        "revenue_cents": 31196670,
+        "order_count": 417
+      },
+      "P0344": {
+        "revenue_cents": 30871796,
+        "order_count": 395
+      },
+      "P0345": {
+        "revenue_cents": 34538650,
+        "order_count": 450
+      },
+      "P0346": {
+        "revenue_cents": 28392436,
+        "order_count": 394
+      },
+      "P0347": {
+        "revenue_cents": 29853020,
+        "order_count": 422
+      },
+      "P0348": {
+        "revenue_cents": 31857193,
+        "order_count": 425
+      },
+      "P0349": {
+        "revenue_cents": 31999181,
+        "order_count": 410
+      },
+      "P0350": {
+        "revenue_cents": 33881509,
+        "order_count": 438
+      },
+      "P0351": {
+        "revenue_cents": 33344039,
+        "order_count": 407
+      },
+      "P0352": {
+        "revenue_cents": 35044863,
+        "order_count": 440
+      },
+      "P0353": {
+        "revenue_cents": 31146833,
+        "order_count": 429
+      },
+      "P0354": {
+        "revenue_cents": 29766936,
+        "order_count": 424
+      },
+      "P0355": {
+        "revenue_cents": 28968531,
+        "order_count": 400
+      },
+      "P0356": {
+        "revenue_cents": 31769628,
+        "order_count": 420
+      },
+      "P0357": {
+        "revenue_cents": 33991355,
+        "order_count": 470
+      },
+      "P0358": {
+        "revenue_cents": 31212852,
+        "order_count": 394
+      },
+      "P0359": {
+        "revenue_cents": 28513297,
+        "order_count": 363
+      },
+      "P0360": {
+        "revenue_cents": 32439613,
+        "order_count": 457
+      },
+      "P0361": {
+        "revenue_cents": 31969351,
+        "order_count": 422
+      },
+      "P0362": {
+        "revenue_cents": 31339082,
+        "order_count": 390
+      },
+      "P0363": {
+        "revenue_cents": 32968230,
+        "order_count": 421
+      },
+      "P0364": {
+        "revenue_cents": 28736248,
+        "order_count": 393
+      },
+      "P0365": {
+        "revenue_cents": 32945457,
+        "order_count": 423
+      },
+      "P0366": {
+        "revenue_cents": 31366195,
+        "order_count": 429
+      },
+      "P0367": {
+        "revenue_cents": 33505275,
+        "order_count": 434
+      },
+      "P0368": {
+        "revenue_cents": 34621278,
+        "order_count": 434
+      },
+      "P0369": {
+        "revenue_cents": 33114390,
+        "order_count": 413
+      },
+      "P0370": {
+        "revenue_cents": 28603045,
+        "order_count": 386
+      },
+      "P0371": {
+        "revenue_cents": 29668111,
+        "order_count": 413
+      },
+      "P0372": {
+        "revenue_cents": 34096350,
+        "order_count": 444
+      },
+      "P0373": {
+        "revenue_cents": 28624555,
+        "order_count": 378
+      },
+      "P0374": {
+        "revenue_cents": 28931870,
+        "order_count": 426
+      },
+      "P0375": {
+        "revenue_cents": 31525382,
+        "order_count": 447
+      },
+      "P0376": {
+        "revenue_cents": 31688575,
+        "order_count": 432
+      },
+      "P0377": {
+        "revenue_cents": 29964215,
+        "order_count": 421
+      },
+      "P0378": {
+        "revenue_cents": 33491735,
+        "order_count": 411
+      },
+      "P0379": {
+        "revenue_cents": 32500143,
+        "order_count": 429
+      },
+      "P0380": {
+        "revenue_cents": 31495583,
+        "order_count": 416
+      },
+      "P0381": {
+        "revenue_cents": 32191619,
+        "order_count": 449
+      },
+      "P0382": {
+        "revenue_cents": 31529871,
+        "order_count": 412
+      },
+      "P0383": {
+        "revenue_cents": 32236580,
+        "order_count": 437
+      },
+      "P0384": {
+        "revenue_cents": 34678699,
+        "order_count": 439
+      },
+      "P0385": {
+        "revenue_cents": 31443764,
+        "order_count": 413
+      },
+      "P0386": {
+        "revenue_cents": 29008614,
+        "order_count": 386
+      },
+      "P0387": {
+        "revenue_cents": 33930079,
+        "order_count": 436
+      },
+      "P0388": {
+        "revenue_cents": 29669140,
+        "order_count": 396
+      },
+      "P0389": {
+        "revenue_cents": 32318720,
+        "order_count": 426
+      },
+      "P0390": {
+        "revenue_cents": 32053717,
+        "order_count": 424
+      },
+      "P0391": {
+        "revenue_cents": 31259177,
+        "order_count": 410
+      },
+      "P0392": {
+        "revenue_cents": 29018529,
+        "order_count": 380
+      },
+      "P0393": {
+        "revenue_cents": 34642999,
+        "order_count": 426
+      },
+      "P0394": {
+        "revenue_cents": 30636567,
+        "order_count": 418
+      },
+      "P0395": {
+        "revenue_cents": 34204740,
+        "order_count": 438
+      },
+      "P0396": {
+        "revenue_cents": 32504452,
+        "order_count": 407
+      },
+      "P0397": {
+        "revenue_cents": 32235591,
+        "order_count": 450
+      },
+      "P0398": {
+        "revenue_cents": 32781503,
+        "order_count": 436
+      },
+      "P0399": {
+        "revenue_cents": 32622511,
+        "order_count": 416
+      },
+      "P0400": {
+        "revenue_cents": 33367227,
+        "order_count": 434
+      },
+      "P0401": {
+        "revenue_cents": 28939409,
+        "order_count": 408
+      },
+      "P0402": {
+        "revenue_cents": 31440908,
+        "order_count": 438
+      },
+      "P0403": {
+        "revenue_cents": 33350282,
+        "order_count": 432
+      },
+      "P0404": {
+        "revenue_cents": 30213383,
+        "order_count": 426
+      },
+      "P0405": {
+        "revenue_cents": 33155883,
+        "order_count": 441
+      },
+      "P0406": {
+        "revenue_cents": 31032546,
+        "order_count": 432
+      },
+      "P0407": {
+        "revenue_cents": 33518356,
+        "order_count": 422
+      },
+      "P0408": {
+        "revenue_cents": 32566192,
+        "order_count": 443
+      },
+      "P0409": {
+        "revenue_cents": 33107910,
+        "order_count": 431
+      },
+      "P0410": {
+        "revenue_cents": 31737174,
+        "order_count": 434
+      },
+      "P0411": {
+        "revenue_cents": 31838392,
+        "order_count": 408
+      },
+      "P0412": {
+        "revenue_cents": 31678087,
+        "order_count": 417
+      },
+      "P0413": {
+        "revenue_cents": 31311550,
+        "order_count": 417
+      },
+      "P0414": {
+        "revenue_cents": 32699405,
+        "order_count": 443
+      },
+      "P0415": {
+        "revenue_cents": 32313857,
+        "order_count": 402
+      },
+      "P0416": {
+        "revenue_cents": 34533855,
+        "order_count": 440
+      },
+      "P0417": {
+        "revenue_cents": 31778526,
+        "order_count": 445
+      },
+      "P0418": {
+        "revenue_cents": 30274279,
+        "order_count": 404
+      },
+      "P0419": {
+        "revenue_cents": 28198494,
+        "order_count": 389
+      },
+      "P0420": {
+        "revenue_cents": 30560781,
+        "order_count": 399
+      },
+      "P0421": {
+        "revenue_cents": 32266973,
+        "order_count": 417
+      },
+      "P0422": {
+        "revenue_cents": 32021637,
+        "order_count": 403
+      },
+      "P0423": {
+        "revenue_cents": 32122442,
+        "order_count": 431
+      },
+      "P0424": {
+        "revenue_cents": 32464115,
+        "order_count": 402
+      },
+      "P0425": {
+        "revenue_cents": 35552325,
+        "order_count": 445
+      },
+      "P0426": {
+        "revenue_cents": 36354998,
+        "order_count": 452
+      },
+      "P0427": {
+        "revenue_cents": 35085376,
+        "order_count": 449
+      },
+      "P0428": {
+        "revenue_cents": 33033322,
+        "order_count": 412
+      },
+      "P0429": {
+        "revenue_cents": 30523037,
+        "order_count": 419
+      },
+      "P0430": {
+        "revenue_cents": 31092048,
+        "order_count": 402
+      },
+      "P0431": {
+        "revenue_cents": 34029027,
+        "order_count": 424
+      },
+      "P0432": {
+        "revenue_cents": 26476310,
+        "order_count": 357
+      },
+      "P0433": {
+        "revenue_cents": 30106774,
+        "order_count": 414
+      },
+      "P0434": {
+        "revenue_cents": 30872310,
+        "order_count": 392
+      },
+      "P0435": {
+        "revenue_cents": 32294591,
+        "order_count": 434
+      },
+      "P0436": {
+        "revenue_cents": 36544110,
+        "order_count": 450
+      },
+      "P0437": {
+        "revenue_cents": 29233192,
+        "order_count": 405
+      },
+      "P0438": {
+        "revenue_cents": 30700175,
+        "order_count": 432
+      },
+      "P0439": {
+        "revenue_cents": 29709741,
+        "order_count": 420
+      },
+      "P0440": {
+        "revenue_cents": 29689721,
+        "order_count": 409
+      },
+      "P0441": {
+        "revenue_cents": 30561351,
+        "order_count": 400
+      },
+      "P0442": {
+        "revenue_cents": 29118241,
+        "order_count": 383
+      },
+      "P0443": {
+        "revenue_cents": 28927317,
+        "order_count": 404
+      },
+      "P0444": {
+        "revenue_cents": 31051934,
+        "order_count": 421
+      },
+      "P0445": {
+        "revenue_cents": 34864167,
+        "order_count": 442
+      },
+      "P0446": {
+        "revenue_cents": 31327485,
+        "order_count": 429
+      },
+      "P0447": {
+        "revenue_cents": 33676918,
+        "order_count": 450
+      },
+      "P0448": {
+        "revenue_cents": 31902177,
+        "order_count": 409
+      },
+      "P0449": {
+        "revenue_cents": 29296350,
+        "order_count": 415
+      },
+      "P0450": {
+        "revenue_cents": 33550869,
+        "order_count": 432
+      },
+      "P0451": {
+        "revenue_cents": 31275343,
+        "order_count": 409
+      },
+      "P0452": {
+        "revenue_cents": 29581528,
+        "order_count": 408
+      },
+      "P0453": {
+        "revenue_cents": 35766731,
+        "order_count": 473
+      },
+      "P0454": {
+        "revenue_cents": 29530329,
+        "order_count": 399
+      },
+      "P0455": {
+        "revenue_cents": 30500821,
+        "order_count": 406
+      },
+      "P0456": {
+        "revenue_cents": 33087369,
+        "order_count": 421
+      },
+      "P0457": {
+        "revenue_cents": 35684787,
+        "order_count": 444
+      },
+      "P0458": {
+        "revenue_cents": 30016434,
+        "order_count": 396
+      },
+      "P0459": {
+        "revenue_cents": 31458724,
+        "order_count": 406
+      },
+      "P0460": {
+        "revenue_cents": 32417924,
+        "order_count": 424
+      },
+      "P0461": {
+        "revenue_cents": 33243905,
+        "order_count": 444
+      },
+      "P0462": {
+        "revenue_cents": 34509484,
+        "order_count": 428
+      },
+      "P0463": {
+        "revenue_cents": 25691757,
+        "order_count": 378
+      },
+      "P0464": {
+        "revenue_cents": 32193238,
+        "order_count": 437
+      },
+      "P0465": {
+        "revenue_cents": 32405145,
+        "order_count": 428
+      },
+      "P0466": {
+        "revenue_cents": 31447518,
+        "order_count": 423
+      },
+      "P0467": {
+        "revenue_cents": 33644267,
+        "order_count": 430
+      },
+      "P0468": {
+        "revenue_cents": 32092122,
+        "order_count": 424
+      },
+      "P0469": {
+        "revenue_cents": 30037484,
+        "order_count": 408
+      },
+      "P0470": {
+        "revenue_cents": 31564109,
+        "order_count": 422
+      },
+      "P0471": {
+        "revenue_cents": 33088017,
+        "order_count": 442
+      },
+      "P0472": {
+        "revenue_cents": 32023893,
+        "order_count": 417
+      },
+      "P0473": {
+        "revenue_cents": 33071720,
+        "order_count": 428
+      },
+      "P0474": {
+        "revenue_cents": 32765512,
+        "order_count": 405
+      },
+      "P0475": {
+        "revenue_cents": 34142571,
+        "order_count": 458
+      },
+      "P0476": {
+        "revenue_cents": 27526531,
+        "order_count": 381
+      },
+      "P0477": {
+        "revenue_cents": 28669823,
+        "order_count": 401
+      },
+      "P0478": {
+        "revenue_cents": 32851706,
+        "order_count": 426
+      },
+      "P0479": {
+        "revenue_cents": 31914907,
+        "order_count": 444
+      },
+      "P0480": {
+        "revenue_cents": 32036001,
+        "order_count": 439
+      },
+      "P0481": {
+        "revenue_cents": 32040786,
+        "order_count": 399
+      },
+      "P0482": {
+        "revenue_cents": 30690048,
+        "order_count": 412
+      },
+      "P0483": {
+        "revenue_cents": 29490872,
+        "order_count": 404
+      },
+      "P0484": {
+        "revenue_cents": 33474163,
+        "order_count": 442
+      },
+      "P0485": {
+        "revenue_cents": 26979369,
+        "order_count": 388
+      },
+      "P0486": {
+        "revenue_cents": 35752307,
+        "order_count": 464
+      },
+      "P0487": {
+        "revenue_cents": 30796252,
+        "order_count": 423
+      },
+      "P0488": {
+        "revenue_cents": 34899424,
+        "order_count": 441
+      },
+      "P0489": {
+        "revenue_cents": 35678491,
+        "order_count": 428
+      },
+      "P0490": {
+        "revenue_cents": 31735333,
+        "order_count": 404
+      },
+      "P0491": {
+        "revenue_cents": 31557360,
+        "order_count": 437
+      },
+      "P0492": {
+        "revenue_cents": 31728933,
+        "order_count": 415
+      },
+      "P0493": {
+        "revenue_cents": 30527548,
+        "order_count": 403
+      },
+      "P0494": {
+        "revenue_cents": 30470912,
+        "order_count": 427
+      },
+      "P0495": {
+        "revenue_cents": 33245640,
+        "order_count": 416
+      },
+      "P0496": {
+        "revenue_cents": 31138613,
+        "order_count": 441
+      },
+      "P0497": {
+        "revenue_cents": 32042316,
+        "order_count": 414
+      },
+      "P0498": {
+        "revenue_cents": 33480380,
+        "order_count": 432
+      },
+      "P0499": {
+        "revenue_cents": 30479008,
+        "order_count": 388
+      },
+      "P0500": {
+        "revenue_cents": 30400942,
+        "order_count": 400
+      }
+    }
+  },
+  "raw_file_sha256": {
+    "customers.csv": "5a52f0b08832d1e2c41d80daafe3701f00ac26fd6580260a8d27523c5412fc43",
+    "orders_part_01.csv": "038f38ced56b5edbca180a457c3b2514c140487205ca2fdb31fdea386a9d27bf",
+    "orders_part_02.csv": "a607b0ea3f417b02b865e4b00babd315ad204d01a90415e4cd6563dd1881a374",
+    "orders_part_03.csv": "4b627d9a5fc35786dbf190567c3141503929c1519b7d5b4a0ae5f0b32cd03366",
+    "orders_part_04.csv": "49feb2f1f5024f94953ceb82c93c436d1d049a4978425cc08ff66f5a72cfdea1",
+    "orders_part_05.csv": "e3e2017c4a72b3ec3e7b4019b2f2d6534b8f6a66f25edd5b5f55ccdff315b50f",
+    "products.csv": "f166302c081db3a1252c29dc53ea8377aa039200d4f7c4823389a402655473c1"
+  }
+}
